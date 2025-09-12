@@ -1,0 +1,57 @@
+
+import Header from '../../sections/home-one/Header';
+import Banner from '../../sections/home-one/Banner';
+import SlidingTextOne from '../../sections/home-one/SlidingTextOne';
+import AboutOne from '../../sections/home-one/AboutOne';
+import ServicesOne from '../../sections/home-one/ServicesOne';
+import SlidingTestTow from '../../sections/home-one/SlidingTestTow';
+import CounterOne from '../../sections/home-one/CounterOne';
+import BeforeAfter from '../../sections/home-one/BeforeAfter';
+import WhyChooseOne from '../../sections/home-one/WhyChooseOne';
+import ProjectOne from '../../sections/home-one/ProjectOne';
+import TeamOne from '../../sections/home-one/TeamOne';
+import ContactOne from '../../sections/home-one/ContactOne';
+import TestimonialOne from '../../sections/home-one/TestimonialOne';
+import BrandOne from '../../sections/home-one/BrandOne';
+import OfficeLocation from '../../sections/home-one/OfficeLocation';
+import PricingOne from '../../sections/home-one/PricingOne';
+import BlogOne from '../../sections/home-one/BlogOne';
+import NewsLetterOne from '../../sections/common/NewsLetterOne';
+import FooterOne from '../../sections/footer/FooterOne';
+import StrickyNavHomeOne from '../../components/stricky-nav/StrickyNavHomeOne';
+import SearchProp from '../../sections/home-one/SearchProp';
+import FreshHelmet from '../../components/common/FreshHelmet';
+
+const HomeOne = () => {
+    return (
+        <>
+            <div className='page-wrapper'>
+                <FreshHelmet title={"Home-one"} />
+                <Header />
+                <Banner />
+                <SlidingTextOne />
+                <AboutOne />
+                <ServicesOne />
+                <SlidingTestTow />
+                <CounterOne />
+                <BeforeAfter />
+                <WhyChooseOne />
+                <ProjectOne />
+                <TeamOne />
+                <ContactOne />
+                <TestimonialOne />
+                <BrandOne />
+                <OfficeLocation />
+                <PricingOne />
+                <BlogOne />
+                <NewsLetterOne />
+                <FooterOne />
+
+                <StrickyNavHomeOne />
+                <SearchProp />
+            </div>
+        </>
+    );
+};
+
+export default HomeOne;
