@@ -11,7 +11,7 @@ import brand8 from "../../assets/images/brand/brand-1-8.png";
 import brand9 from "../../assets/images/brand/brand-1-9.png";
 import brand10 from "../../assets/images/brand/brand-1-10.png";
 
-const BrandOne = () => {
+const BrandOne = ({bgPattren = false}) => {
   const brandImages = [
     { src: brand1, alt: "Brand 1" },
     { src: brand2, alt: "Brand 2" },
@@ -40,6 +40,8 @@ const BrandOne = () => {
   return (
     <>
       <section className="brand-one">
+        {bgPattren && <div className="bg-pattern-home-4"></div>}
+        <div className="bg-pattern-home-4"></div>
         <div className="brand-one__wrap">
           <ul className="brand-one__list" style={marqueeStyle}>
             {/* First set of images */}

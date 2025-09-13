@@ -4,7 +4,7 @@ import contImg3 from '../../assets/images/resources/contact-one-img-main.jpg'
 import contImg4 from '../../assets/images/resources/contact-one-small-img-1.jpg'
 import contImg5 from '../../assets/images/resources/contact-one-small-img-2.jpg'
 
-const ContactOne = () => {
+const ContactOne = ({ bgPattren = false }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         const form = e.target;
@@ -19,6 +19,7 @@ const ContactOne = () => {
     }
     return (
         <section className="contact-one">
+            {bgPattren && <div className="bg-pattern-home-4"></div>}
             <div className="contact-one__shape-1"
             ></div>
             <div className="contact-one__shape-2 zoom-fade">

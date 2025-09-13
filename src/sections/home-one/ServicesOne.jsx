@@ -11,13 +11,14 @@ import services13 from "../../assets/images/services/services-1-3.jpg";
 import services14 from "../../assets/images/services/services-1-4.jpg";
 import services15 from "../../assets/images/services/services-1-5.jpg";
 import AdvanceCountUp from '../../components/common/AdvanceCountUp';
-const ServicesOne = () => {
-    const [animationRef, animationInView] = useInView({
+const ServicesOne = ({bgPattren = false}) => {
+  const [animationRef, animationInView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
-    return (
-        <section className="services-one">
+  return (
+    <section className="services-one">
+      {bgPattren && <div className="bg-pattern-home-4"></div>}
       <div className="services-one__shape-bg"></div>
       <div className="services-one__shape-1"></div>
       <div className="services-one__shape-2"></div>
@@ -230,7 +231,7 @@ const ServicesOne = () => {
         </div>
       </div>
     </section>
-    );
+  );
 };
 
 export default ServicesOne;

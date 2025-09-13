@@ -63,9 +63,10 @@ const Allblogs = [
     },
 ]
 
-const BlogOne = ({ blogs = Allblogs || [], pagination = false }) => {
+const BlogOne = ({ blogs = Allblogs || [], pagination = false, bgPattren = false }) => {
     return (
         <section className="blog-one">
+            {bgPattren && <div className="bg-pattern-home-4"></div>}
             <div className="blog-one__shape-bg" >
             </div>
             <div className="container">

@@ -11,7 +11,7 @@ import whych8 from "../../assets/images/resources/why-choose-one-client-img-3.jp
 import whych9 from "../../assets/images/resources/why-choose-one-client-img-4.jpg";
 import AdvanceCountUp from '../../components/common/AdvanceCountUp';
 import VideoGalleryPopup from '../../components/common/VideoGalleryPopup';
-const WhyChooseOne = () => {
+const WhyChooseOne = ({bgPattren = false}) => {
     const [showVideoPopup, setShowVideoPopup] = useState(false);
     const [currentVideoUrl, setCurrentVideoUrl] = useState("");
     const [animationRef, animationInView] = useInView({
@@ -38,6 +38,7 @@ const WhyChooseOne = () => {
     return (
         <>
             <section className="why-choose-one">
+                {bgPattren && <div className="bg-pattern-home-4"></div>}
                 <div className="why-choose-one__bg-shape"></div>
                 <div className="why-choose-one__shape-2 float-bob-x">
                     <img src={whych1} alt="" />

@@ -2,9 +2,10 @@ import React from 'react';
 import image1 from "../../assets/images/resources/before-after-three-img-1.jpg"
 import image2 from "../../assets/images/resources/before-after-three-img-2.jpg"
 import BeforeAfterSlider from '../../components/common/BeforeAfterSlider';
-const BeforeAfterThree = () => {
+const BeforeAfterThree = ({bgPattren = false}) => {
     return (
         <section className="before-after-three">
+            {bgPattren && <div className="bg-pattern-home-4"></div>}
             <div className="container">
                 <div className="section-title text-center sec-title-animation animation-style1">
                     <div className="section-title__tagline-box">

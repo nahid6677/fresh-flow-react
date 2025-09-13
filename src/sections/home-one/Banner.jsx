@@ -8,7 +8,7 @@ import satisfiedPartner2 from '../../assets/images/resources/banner-one-satisfie
 import satisfiedPartner3 from '../../assets/images/resources/banner-one-satisfied-partner-1-3.jpg';
 import googleRatingImg from '../../assets/images/resources/banner-one-google-rating-img.png';
 import { Link } from 'react-router-dom';
-const Banner = () => {
+const Banner = ({ bgPattren = false }) => {
     const [typedText, setTypedText] = useState('');
     const [currentStringIndex, setCurrentStringIndex] = useState(0);
     const [currentCharIndex, setCurrentCharIndex] = useState(0);
@@ -76,6 +76,7 @@ const Banner = () => {
     }, []);
     return (
         <section className="banner-one">
+            {bgPattren && <div className="bg-pattern-home-4"></div>}
             <div
                 className="banner-one__shape-bg-1"
                 style={{

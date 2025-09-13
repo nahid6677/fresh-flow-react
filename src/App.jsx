@@ -5,6 +5,7 @@ import ChatProp from './components/common/ChatProp';
 import MobileNav from './components/common/MobileNav';
 import ScrollToTop from "./components/common/ScrollToTop"
 import SideBar from './components/side-bar/SideBar';
+import Loading from './components/preloader/Loading';
 const App = () => {
   const { loading, setLoading, isMobileOpen, isSearch } = useContext(FreshFlowContext);
   const location = useLocation();
@@ -12,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 500);
 
     const cursor = document.querySelector(".custom-cursor__cursor");
     const cursorinner = document.querySelector(".custom-cursor__cursor-two");
@@ -65,7 +66,7 @@ const App = () => {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [currentPath])
@@ -82,14 +83,7 @@ const App = () => {
       <div className="custom-cursor__cursor-two"></div>
 
       <ChatProp />
-
-      {/* {loading ?
-        <div className='bg-gray d-flex justify-content-center align-item-center'>
-          LOADING..........
-        </div>
-        :
-        <Outlet />} */}
-      <Outlet />
+      {loading ? <Loading /> : <Outlet />}
       <MobileNav />
       <ScrollToTop />
       <SideBar />

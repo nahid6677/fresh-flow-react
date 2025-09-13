@@ -84,12 +84,13 @@ const teamMenbers = [
         singleImg: teamimg6
     },
 ]
-const TeamTow = () => {
+const TeamTow = ({bgPattren = false}) => {
     const [activeItem, setActiveItem] = useState(1)
 
 
     return (
         <section className="team-two">
+            {bgPattren && <div className="bg-pattern-home-4"></div>}
             <div className="team-two__shape-1">
                 <img src={bgteamTow1} alt="" />
             </div>

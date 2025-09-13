@@ -25,23 +25,23 @@ const HomeFour = () => {
         <div className='page-wrapper'>
             <FreshHelmet title={"Home-Four"} />
             <Header />
-            <Banner />
+            <Banner bgPattren={true} />
             <SlidingTextOne />
-            <WhyChooseFour />
-            <ServicesOne />
+            <WhyChooseFour bgPattren={true} />
+            <ServicesOne bgPattren={true} />
             <SlidingTestTow />
-            <CounterOne />
-            <BeforeAfterThree />
-            <WhyChooseOne />
-            <ProjectOne />
-            <TeamTow />
-            <ContactOne />
-            <TestimonialOne />
-            <BrandOne />
-            <OfficeLocation />
-            <PricingOne />
-            <BlogOne />
-            <NewsLetterOne />
+            <CounterOne bgPattren={true} />
+            <BeforeAfterThree bgPattren={true} />
+            <WhyChooseOne bgPattren={true} />
+            <ProjectOne bgPattren={true} />
+            <TeamTow bgPattren={true} />
+            <ContactOne bgPattren={true} />
+            <TestimonialOne bgPattren={true} />
+            <BrandOne bgPattren={true} />
+            <OfficeLocation bgPattren={true} />
+            <PricingOne bgPattren={true} />
+            <BlogOne bgPattren={true} />
+            <NewsLetterOne bgPattren={true} />
             <FooterOne />
 
             <StrickyNavHomeOne />

@@ -8,9 +8,10 @@ import officImg7 from "../../assets/images/resources/office-location-popup-img-5
 import { Link } from "react-router-dom"
 
 
-const OfficeLocation = () => {
+const OfficeLocation = ({bgPattren = false}) => {
     return (
         <section className="office-location">
+            {bgPattren && <div className="bg-pattern-home-4"></div>}
             <div className="container">
                 <div className="row">
                     <div className="col-xl-4">

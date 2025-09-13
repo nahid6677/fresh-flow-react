@@ -5,7 +5,7 @@ import newsimg4 from "../../assets/images/resources/newsletter-one-img-1-2.jpg"
 import newsimg5 from "../../assets/images/resources/newsletter-one-img-1-3.jpg"
 import { Link } from 'react-router-dom';
 
-const NewsLetterOne = ({img1 = newsimg3, img2 = newsimg4, img3 = newsimg5}) => {
+const NewsLetterOne = ({ img1 = newsimg3, img2 = newsimg4, img3 = newsimg5, bgPattren = false }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         // const email = e.target.email.value;
@@ -13,6 +13,7 @@ const NewsLetterOne = ({img1 = newsimg3, img2 = newsimg4, img3 = newsimg5}) => {
     }
     return (
         <section className="newsletter-one">
+            {bgPattren && <div className="bg-pattern-home-4"></div>}
             <div className="container">
                 <div className="newsletter-one__inner">
                     <div className="newsletter-one__shape-bg"

@@ -65,7 +65,7 @@ const plans = [
     }
 ];
 
-const PricingOne = () => {
+const PricingOne = ({bgPattren = false}) => {
     const [pricingPlans, setPricingPlans] = useState(plans || [])
     const [isAct, setIsAct] = useState('weekly')
     const handleWeekly = () => {
@@ -82,6 +82,7 @@ const PricingOne = () => {
     }
     return (
         <section className="pricing-one">
+            {bgPattren && <div className="bg-pattern-home-4"></div>}
             <div className="pricing-one__shape-1">
                 <img src={pricing1} alt="" />
             </div>

@@ -43,7 +43,7 @@ const fixProject = [
     imgURL: proj5,
   },
 ];
-const ProjectOne = () => {
+const ProjectOne = ({bgPattren = false}) => {
   const [last, setLast] = useState(true);
   const [isActive, setActive] = useState("All");
   const [projects, setProject] = useState(fixProject || []);
@@ -92,6 +92,7 @@ const ProjectOne = () => {
   }
   return (
     <section className="project-one">
+      {bgPattren && <div className="bg-pattern-home-4"></div>}
       <div className="project-one__bg-shape"></div>
       <div className="project-one__bg-shape-2"></div>
       <div className="project-one__shape-1"></div>

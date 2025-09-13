@@ -11,7 +11,7 @@ import tesImg10 from '../../assets/images/testimonial/testimonial-1-5.jpg'
 
 import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
-const TestimonialOne = () => {
+const TestimonialOne = ({bgPattren = false}) => {
 
     
     const firstMarquee = [
@@ -132,6 +132,7 @@ const TestimonialOne = () => {
     return (
         <>
             <section className="testimonial-one">
+                {bgPattren && <div className="bg-pattern-home-4"></div>}
                 <div className="testimonial-one__shape-1">
                     <img src={tesImg1} alt="" />
                 </div>
